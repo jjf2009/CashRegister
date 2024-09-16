@@ -7,49 +7,52 @@
     <title>Cash Register Project</title>
 </head>
 <body>
-<div class="box">
+<div class="container">
     <img src="J.png" class="img" style="width: 5rem;" alt="Logo">
     <h1 id="title">Cash Register Project</h1>
-    <div id="change-due"></div>
+    <div id="output"></div>
 <form>
     <fieldset>
         <label for="number" >Enter cash from customer:</label>
-        <input id="cash" type="number">
+        <input id="cash" type="number" required>
         <button id="purchase-btn" type="button">Purchase</button>
     </fieldset> 
 </form>
-<div class="card">
-    <div class="amount"><div class="number">3.45<span id="price"></span></div></div>
-    <div class="top"></div>
-    <div class="register">
-    <div class="panel">
-    <div class="black-box"></div>
-    <div class="black-box"></div>
-    <div class="black-box"></div>
-    <div class="black-box"></div>
-    <div class="black-box"></div>
-    <div class="black-box"></div>
-    <div class="black-box"></div>
-    <div class="black-box"></div>
-    <div class="black-box"></div>
+<div class="top-register">
+    <div class="number" id="price">1.87</div>
+    <div class="neck"></div>
+    <div class="storage">
+    <div class="button-panel">
+    <div class="black-btn"></div>
+    <div class="black-btn"></div>
+    <div class="black-btn"></div>
+    <div class="black-btn"></div>
+    <div class="black-btn"></div>
+    <div class="black-btn"></div>
+    <div class="black-btn"></div>
+    <div class="black-btn"></div>
+    <div class="black-btn"></div>
 </div>
-    <div class="list">
-        <p id="left">Change in drawer:
-        Pennies: $1.01
-        Nickels: $2.05
-        Dimes: $3.1
-        Quarters: $4.25
-        Ones: $90
-        Fives: $5
-        Tens: $20
-        Twenties: $60
-        Hundreds: $100</p></div>
-</div>
-<div class="bottom">
-    <div class="hole"></div>
-</div>
+<div>
+    <div class="list" id="left">
+    <p><strong>Change in drawer:</strong></p>
+    <p>Pennies:$1.01</p>
+    <p>Nickels:$2.05</p>
+    <p>Dimes:$3.1</p>
+    <p>Quarters:$4.25</p>
+    <p>Ones:$90</p>
+    <p>Fives:$55</p>
+    <p>Tens:$20</p>
+    <p>Twenties:$60</p>
+    <p>Hundreds:$100</p>  
+    </div>
 </div>
 </div>
+</div>
+<div class="bottom-register">
+<div class="hole"></div>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>

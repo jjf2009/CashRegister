@@ -1,10 +1,9 @@
-const output = document.getElementById('change-due');
+const output = document.getElementById('output');
 const amount = document.getElementById('price');
-const cash = document.getElementById('left');
+const input = parseFloat(document.getElementById('cash').value);
 const pay = document.getElementById('purchase-btn');
-const input = document.getElementById('cash');
+const cash = document.getElementById('left');
 let price = 1.87;
-
 let cid = [
   ['PENNY', 1.01],
   ['NICKEL', 2.05],
@@ -29,8 +28,9 @@ function checkCashDrawer(price, cashInput, cid) {
     alert("No change due - customer paid with exact cash");
     return;
   }
-
   let changeDue = newcash - price;
+  console.log(newcash);
+  console.log(price);
   let totalInDrawer = cid.reduce((acc, curr) => acc + curr[1], 0);
   totalInDrawer = totalInDrawer.toFixed(2);
 
@@ -45,6 +45,7 @@ function checkCashDrawer(price, cashInput, cid) {
 
 // Add event listener, and pass the correct arguments
 pay.addEventListener("click", function() {
+  output.innerText='';
   checkCashDrawer(price, input, cid);
   document.getElementById("change-due").innerText = `Status: ${result.status} ${result.change.map(c => `${c[0]}: $${c[1]}`).join(', ')}`;
 });
