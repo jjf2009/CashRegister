@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cash Register Project</title>
+</head>
+<body>
+<div class="box">
+    <img src="J.png" class="img" style="width: 5rem;" alt="Logo">
+    <h1 id="title">Cash Register Project</h1>
+    <div id="change-due"></div>
+<form>
+    <fieldset>
+        <label for="number" >Enter cash from customer:</label>
+        <input id="cash" type="number">
+        <button id="purchase-btn" type="button">Purchase</button>
+    </fieldset> 
+</form>
+<div class="card">
+    <div class="amount"><div class="number">3.45<span id="price"></span></div></div>
+    <div class="top"></div>
+    <div class="register">
+    <div class="panel">
+    <div class="black-box"></div>
+    <div class="black-box"></div>
+    <div class="black-box"></div>
+    <div class="black-box"></div>
+    <div class="black-box"></div>
+    <div class="black-box"></div>
+    <div class="black-box"></div>
+    <div class="black-box"></div>
+    <div class="black-box"></div>
+</div>
+    <div class="list">
+        <p id="left">Change in drawer:
+        Pennies: $1.01
+        Nickels: $2.05
+        Dimes: $3.1
+        Quarters: $4.25
+        Ones: $90
+        Fives: $5
+        Tens: $20
+        Twenties: $60
+        Hundreds: $100</p></div>
+</div>
+<div class="bottom">
+    <div class="hole"></div>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
